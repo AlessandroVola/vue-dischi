@@ -1,24 +1,29 @@
 <template>
   <div id="app">
-    <HeaderComponent/>
-    <MainComponent/>
+    <HeaderComponent />
+    <MainComponent />
   </div>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue';
-import MainComponent from './components/MainComponent.vue';
+import HeaderComponent from '@/components/HeaderComponent.vue'
+import MainComponent from '@/components/MainComponent.vue'
 
 export default {
   name: 'App',
-  components: {
+  components:{
     HeaderComponent,
     MainComponent
   }
-  }
+}
 </script>
 
 <style lang="scss">
-  @import '@/assets/styles/style.scss'
+@import '@/assets/styles/style.scss';
+
+body{
+  background-color: #1e2d3b;
+}
+
 
 </style>
